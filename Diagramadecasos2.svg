@@ -17,9 +17,9 @@ Vendedor</text>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="493" x2="513" y1="348" y2="348"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="503" x2="498" y1="358" y2="373"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="503" x2="508" y1="358" y2="373"/>
-<ellipse cx="84" cy="316" fill="#000000" rx="62.0" ry="22.0" stroke="#000000" stroke-width="1"/>
-<ellipse cx="84" cy="316" fill="#cc99ff" rx="61.0" ry="21.0" stroke="#cc99ff" stroke-width="1"/>
-<text font-family="Dialog" font-size="12" x="38" y="317">
+<ellipse cx="76" cy="308" fill="#000000" rx="62.0" ry="22.0" stroke="#000000" stroke-width="1"/>
+<ellipse cx="76" cy="308" fill="#cc99ff" rx="61.0" ry="21.0" stroke="#cc99ff" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="30" y="309">
 avaliar produto</text>
 <ellipse cx="252" cy="309" fill="#000000" rx="70.0" ry="23.0" stroke="#000000" stroke-width="1"/>
 <ellipse cx="252" cy="309" fill="#cc99ff" rx="69.0" ry="22.0" stroke="#cc99ff" stroke-width="1"/>
@@ -33,95 +33,86 @@ incluir usuário</text>
 <ellipse cx="815" cy="220" fill="#c8ffff" rx="64.0" ry="21.0" stroke="#c8ffff" stroke-width="1"/>
 <text font-family="Dialog" font-size="12" x="771" y="221">
 excluir usuário</text>
-<ellipse cx="615" cy="174" fill="#000000" rx="73.0" ry="24.0" stroke="#000000" stroke-width="1"/>
-<ellipse cx="615" cy="174" fill="#c8ffff" rx="72.0" ry="23.0" stroke="#c8ffff" stroke-width="1"/>
-<text font-family="Dialog" font-size="12" x="569" y="175">
+<ellipse cx="599" cy="174" fill="#000000" rx="73.0" ry="24.0" stroke="#000000" stroke-width="1"/>
+<ellipse cx="599" cy="174" fill="#c8ffff" rx="72.0" ry="23.0" stroke="#c8ffff" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="553" y="175">
 gerenciar perfil</text>
-<ellipse cx="804" cy="62" fill="#000000" rx="70.0" ry="24.0" stroke="#000000" stroke-width="1"/>
-<ellipse cx="804" cy="62" fill="#c8ffff" rx="69.0" ry="23.0" stroke="#c8ffff" stroke-width="1"/>
-<text font-family="Dialog" font-size="12" x="754" y="63">
+<ellipse cx="764" cy="46" fill="#000000" rx="70.0" ry="24.0" stroke="#000000" stroke-width="1"/>
+<ellipse cx="764" cy="46" fill="#c8ffff" rx="69.0" ry="23.0" stroke="#c8ffff" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="714" y="47">
 atualizar usuário</text>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="754" x2="750" y1="138" y2="139"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="745" x2="740" y1="140" y2="141"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="735" x2="730" y1="143" y2="144"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="725" x2="720" y1="145" y2="146"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="715" x2="711" y1="148" y2="149"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="706" x2="701" y1="150" y2="151"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="696" x2="691" y1="153" y2="154"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="686" x2="681" y1="155" y2="156"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="676" x2="672" y1="158" y2="159"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="681" x2="672" y1="149" y2="159"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="685" x2="672" y1="162" y2="159"/>
-<text font-family="Dialog" font-size="12" x="701" y="166">
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="735" x2="732" y1="67" y2="70"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="728" x2="724" y1="73" y2="76"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="720" x2="716" y1="79" y2="82"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="712" x2="708" y1="85" y2="88"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="704" x2="700" y1="91" y2="94"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="696" x2="692" y1="97" y2="100"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="688" x2="684" y1="104" y2="107"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="680" x2="676" y1="110" y2="113"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="672" x2="668" y1="116" y2="119"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="664" x2="660" y1="122" y2="125"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="656" x2="652" y1="128" y2="131"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="648" x2="644" y1="134" y2="138"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="640" x2="636" y1="141" y2="144"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="632" x2="628" y1="147" y2="150"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="632" x2="627" y1="138" y2="151"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="640" x2="627" y1="149" y2="151"/>
+<text font-family="Dialog" font-size="12" x="598" y="87">
 &lt;&lt;extend&gt;&gt;</text>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="768" x2="764" y1="82" y2="84"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="760" x2="756" y1="87" y2="89"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="751" x2="747" y1="92" y2="94"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="743" x2="738" y1="97" y2="99"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="734" x2="730" y1="102" y2="104"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="725" x2="721" y1="107" y2="110"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="717" x2="713" y1="112" y2="115"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="708" x2="704" y1="117" y2="120"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="700" x2="695" y1="122" y2="125"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="691" x2="687" y1="127" y2="130"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="682" x2="678" y1="133" y2="135"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="674" x2="669" y1="138" y2="140"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="665" x2="661" y1="143" y2="145"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="657" x2="652" y1="148" y2="150"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="656" x2="650" y1="139" y2="152"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="663" x2="650" y1="151" y2="152"/>
-<text font-family="Dialog" font-size="12" x="634" y="91">
-&lt;&lt;extend&gt;&gt;</text>
-<ellipse cx="924" cy="438" fill="#000000" rx="70.0" ry="24.0" stroke="#000000" stroke-width="1"/>
-<ellipse cx="924" cy="438" fill="#ffc8ff" rx="69.0" ry="23.0" stroke="#ffc8ff" stroke-width="1"/>
-<text font-family="Dialog" font-size="12" x="870" y="439">
+<ellipse cx="1004" cy="430" fill="#000000" rx="70.0" ry="24.0" stroke="#000000" stroke-width="1"/>
+<ellipse cx="1004" cy="430" fill="#ffc8ff" rx="69.0" ry="23.0" stroke="#ffc8ff" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="950" y="431">
 adicionar produto</text>
 <ellipse cx="793" cy="358" fill="#000000" rx="75.0" ry="24.0" stroke="#000000" stroke-width="1"/>
 <ellipse cx="793" cy="358" fill="#ffc8ff" rx="74.0" ry="23.0" stroke="#ffc8ff" stroke-width="1"/>
 <text font-family="Dialog" font-size="12" x="738" y="359">
 gerenciar produto</text>
-<ellipse cx="787" cy="460" fill="#000000" rx="61.0" ry="22.0" stroke="#000000" stroke-width="1"/>
-<ellipse cx="787" cy="460" fill="#ffc8ff" rx="60.0" ry="21.0" stroke="#ffc8ff" stroke-width="1"/>
-<text font-family="Dialog" font-size="12" x="741" y="461">
+<ellipse cx="867" cy="452" fill="#000000" rx="61.0" ry="22.0" stroke="#000000" stroke-width="1"/>
+<ellipse cx="867" cy="452" fill="#ffc8ff" rx="60.0" ry="21.0" stroke="#ffc8ff" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="821" y="453">
 excluir produto</text>
-<ellipse cx="634" cy="421" fill="#000000" rx="68.0" ry="23.0" stroke="#000000" stroke-width="1"/>
-<ellipse cx="634" cy="421" fill="#ffc8ff" rx="67.0" ry="22.0" stroke="#ffc8ff" stroke-width="1"/>
-<text font-family="Dialog" font-size="12" x="582" y="422">
+<ellipse cx="714" cy="453" fill="#000000" rx="68.0" ry="23.0" stroke="#000000" stroke-width="1"/>
+<ellipse cx="714" cy="453" fill="#ffc8ff" rx="67.0" ry="22.0" stroke="#ffc8ff" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="662" y="454">
 Atualizar produto</text>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="677" x2="681" y1="403" y2="402"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="686" x2="690" y1="400" y2="398"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="695" x2="700" y1="396" y2="394"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="704" x2="709" y1="392" y2="391"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="714" x2="718" y1="389" y2="387"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="723" x2="728" y1="385" y2="383"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="732" x2="737" y1="381" y2="379"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="742" x2="745" y1="378" y2="376"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="736" x2="745" y1="386" y2="376"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="731" x2="745" y1="373" y2="376"/>
-<text font-family="Dialog" font-size="12" x="606" y="370">
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="732" x2="735" y1="430" y2="427"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="738" x2="741" y1="423" y2="419"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="745" x2="748" y1="415" y2="411"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="751" x2="754" y1="407" y2="403"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="758" x2="761" y1="399" y2="395"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="764" x2="767" y1="392" y2="388"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="771" x2="773" y1="384" y2="381"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="770" x2="773" y1="394" y2="381"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="759" x2="773" y1="385" y2="381"/>
+<text font-family="Dialog" font-size="12" x="647" y="417">
 &lt;&lt;extend&gt;&gt;</text>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="788" x2="788" y1="438" y2="433"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="788" x2="788" y1="428" y2="423"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="789" x2="789" y1="418" y2="413"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="789" x2="789" y1="408" y2="403"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="790" x2="790" y1="398" y2="393"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="790" x2="790" y1="388" y2="383"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="797" x2="791" y1="393" y2="381"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="783" x2="791" y1="392" y2="381"/>
-<text font-family="Dialog" font-size="12" x="704" y="411">
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="850" x2="847" y1="430" y2="427"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="844" x2="841" y1="423" y2="419"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="838" x2="835" y1="415" y2="411"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="832" x2="828" y1="407" y2="403"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="825" x2="822" y1="399" y2="395"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="819" x2="816" y1="391" y2="387"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="813" x2="811" y1="383" y2="381"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="823" x2="811" y1="386" y2="381"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="812" x2="811" y1="394" y2="381"/>
+<text font-family="Dialog" font-size="12" x="748" y="421">
 &lt;&lt;extend&gt;&gt;</text>
 <polyline fill="none" points="718,355 513,348" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="889" x2="885" y1="417" y2="415"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="881" x2="877" y1="412" y2="410"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="872" x2="868" y1="407" y2="404"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="864" x2="859" y1="402" y2="399"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="855" x2="851" y1="396" y2="394"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="846" x2="842" y1="391" y2="388"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="838" x2="834" y1="386" y2="383"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="829" x2="827" y1="381" y2="379"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="840" x2="827" y1="379" y2="379"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="833" x2="827" y1="391" y2="379"/>
-<text font-family="Dialog" font-size="12" x="866" y="381">
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="954" x2="950" y1="413" y2="412"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="945" x2="940" y1="410" y2="409"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="936" x2="931" y1="407" y2="405"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="926" x2="921" y1="404" y2="402"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="917" x2="912" y1="400" y2="399"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="907" x2="902" y1="397" y2="395"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="898" x2="893" y1="394" y2="392"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="888" x2="883" y1="391" y2="389"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="879" x2="874" y1="387" y2="386"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="869" x2="864" y1="384" y2="382"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="860" x2="855" y1="381" y2="379"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="850" x2="845" y1="377" y2="376"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="857" x2="844" y1="372" y2="375"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="853" x2="844" y1="385" y2="375"/>
+<text font-family="Dialog" font-size="12" x="846" y="419">
 &lt;&lt;extend&gt;&gt;</text>
 <text font-family="Dialog" font-size="12" x="474" y="226">
 Usuário</text>
@@ -131,23 +122,21 @@ Usuário</text>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="486" x2="506" y1="188" y2="188"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="496" x2="491" y1="198" y2="213"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="496" x2="501" y1="198" y2="213"/>
-<polyline fill="none" points="491,236 383,290" stroke="#000000" stroke-width="1"/>
-<polyline fill="none" points="501,236 500,327" stroke="#000000" stroke-width="1"/>
-<polyline fill="none" points="542,174 505,175" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="526,174 505,175" stroke="#000000" stroke-width="1"/>
 <polyline fill="none" points="321,308 366,308" stroke="#000000" stroke-width="1"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="145" x2="150" y1="312" y2="312"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="155" x2="160" y1="312" y2="312"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="165" x2="170" y1="311" y2="311"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="175" x2="180" y1="311" y2="311"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="170" x2="182" y1="317" y2="310"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="169" x2="182" y1="303" y2="310"/>
-<text font-family="Dialog" font-size="12" x="122" y="287">
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="137" x2="142" y1="307" y2="307"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="147" x2="152" y1="307" y2="307"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="157" x2="162" y1="307" y2="307"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="167" x2="172" y1="307" y2="307"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="177" x2="182" y1="307" y2="307"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="170" x2="182" y1="314" y2="307"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="170" x2="182" y1="300" y2="307"/>
+<text font-family="Dialog" font-size="12" x="118" y="285">
 &lt;&lt;extend&gt;&gt;</text>
-<ellipse cx="507" cy="469" fill="#000000" rx="69.0" ry="23.0" stroke="#000000" stroke-width="1"/>
-<ellipse cx="507" cy="469" fill="#ffc8ff" rx="68.0" ry="22.0" stroke="#ffc8ff" stroke-width="1"/>
-<text font-family="Dialog" font-size="12" x="454" y="470">
+<ellipse cx="579" cy="429" fill="#000000" rx="69.0" ry="23.0" stroke="#000000" stroke-width="1"/>
+<ellipse cx="579" cy="429" fill="#ffc8ff" rx="68.0" ry="22.0" stroke="#ffc8ff" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="526" y="430">
 anunciar produto</text>
-<polyline fill="none" points="508,396 507,446" stroke="#000000" stroke-width="1"/>
 <text font-family="Dialog" font-size="12" x="979" y="346">
 administrador</text>
 <ellipse cx="1021" cy="295" fill="#000000" rx="8.0" ry="7.5" stroke="#000000" stroke-width="1"/>
@@ -156,35 +145,42 @@ administrador</text>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="1011" x2="1031" y1="308" y2="308"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="1021" x2="1016" y1="318" y2="333"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="1021" x2="1026" y1="318" y2="333"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="761" x2="757" y1="207" y2="206"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="752" x2="747" y1="205" y2="204"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="742" x2="737" y1="203" y2="202"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="732" x2="727" y1="201" y2="200"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="722" x2="718" y1="198" y2="197"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="713" x2="708" y1="196" y2="195"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="703" x2="698" y1="194" y2="193"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="693" x2="688" y1="192" y2="190"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="683" x2="678" y1="189" y2="188"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="688" x2="675" y1="182" y2="187"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="685" x2="675" y1="196" y2="187"/>
-<text font-family="Dialog" font-size="12" x="663" y="219">
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="759" x2="755" y1="208" y2="207"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="750" x2="745" y1="206" y2="205"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="740" x2="735" y1="204" y2="203"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="730" x2="725" y1="202" y2="201"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="720" x2="715" y1="200" y2="199"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="710" x2="706" y1="198" y2="197"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="701" x2="696" y1="196" y2="195"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="691" x2="686" y1="194" y2="193"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="681" x2="676" y1="192" y2="191"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="671" x2="666" y1="190" y2="189"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="661" x2="660" y1="188" y2="187"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="673" x2="660" y1="182" y2="187"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="670" x2="660" y1="196" y2="187"/>
+<text font-family="Dialog" font-size="12" x="656" y="220">
 &lt;&lt;extend&gt;&gt;</text>
 <ellipse cx="1031" cy="86" fill="#000000" rx="73.0" ry="24.0" stroke="#000000" stroke-width="1"/>
 <ellipse cx="1031" cy="86" fill="#c0c0c0" rx="72.0" ry="23.0" stroke="#c0c0c0" stroke-width="1"/>
 <text font-family="Dialog" font-size="12" x="975" y="87">
 gerenciar usuários</text>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="871" x2="876" y1="68" y2="68"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="881" x2="886" y1="69" y2="69"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="891" x2="896" y1="70" y2="70"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="901" x2="906" y1="71" y2="71"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="911" x2="916" y1="72" y2="73"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="921" x2="926" y1="73" y2="74"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="931" x2="936" y1="74" y2="75"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="941" x2="946" y1="75" y2="76"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="951" x2="956" y1="76" y2="77"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="948" x2="961" y1="83" y2="78"/>
-<line fill="#000000" stroke="#000000" stroke-width="1" x1="949" x2="961" y1="69" y2="78"/>
-<text font-family="Dialog" font-size="12" x="877" y="46">
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="828" x2="832" y1="55" y2="55"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="837" x2="842" y1="56" y2="57"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="847" x2="852" y1="57" y2="58"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="857" x2="862" y1="59" y2="60"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="867" x2="872" y1="60" y2="61"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="877" x2="882" y1="62" y2="63"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="887" x2="892" y1="63" y2="64"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="897" x2="902" y1="65" y2="65"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="907" x2="912" y1="66" y2="67"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="917" x2="922" y1="68" y2="68"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="927" x2="932" y1="69" y2="70"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="937" x2="942" y1="71" y2="71"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="947" x2="952" y1="72" y2="73"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="957" x2="962" y1="73" y2="74"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="951" x2="964" y1="80" y2="75"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="953" x2="964" y1="66" y2="75"/>
+<text font-family="Dialog" font-size="12" x="856" y="37">
 &lt;&lt;extend&gt;&gt;</text>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="868" x2="872" y1="114" y2="114"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="877" x2="882" y1="113" y2="112"/>
@@ -198,7 +194,7 @@ gerenciar usuários</text>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="957" x2="962" y1="99" y2="98"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="955" x2="966" y1="105" y2="97"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="952" x2="966" y1="92" y2="97"/>
-<text font-family="Dialog" font-size="12" x="867" y="134">
+<text font-family="Dialog" font-size="12" x="883" y="126">
 &lt;&lt;extend&gt;&gt;</text>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="845" x2="849" y1="200" y2="198"/>
 <line fill="#000000" stroke="#000000" stroke-width="1" x1="853" x2="857" y1="195" y2="193"/>
@@ -224,8 +220,37 @@ gerenciar usuários</text>
 &lt;&lt;extend&gt;&gt;</text>
 <polyline fill="none" points="1023,287 1030,109" stroke="#000000" stroke-width="1"/>
 <polyline fill="none" points="867,357 1016,356" stroke="#000000" stroke-width="1"/>
-<polyline fill="none" points="501,236 1012,292" stroke="#000000" stroke-width="1"/>
 <rect fill="none" height="496" stroke="#000000" stroke-width="1" width="1096" x="14" y="14"/>
-<text font-family="Dialog" font-size="36" font-weight="bold" x="98" y="65">
-SalesUfac</text>
+<text font-family="Dialog" font-size="36" font-weight="bold" x="78" y="64">
+Sales</text>
+<polyline fill="none" points="383,290 491,236" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="491,236 483,247 477,235" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="491,236 483,247 477,235" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="500,327 501,236" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="501,236 507,248 493,247" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="501,236 507,248 493,247" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="1012,292 501,236" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="501,236 513,230 512,244" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="501,236 513,230 512,244" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="627" x2="631" y1="412" y2="411"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="636" x2="641" y1="409" y2="408"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="646" x2="650" y1="406" y2="405"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="655" x2="660" y1="403" y2="402"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="665" x2="670" y1="400" y2="398"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="674" x2="679" y1="397" y2="395"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="684" x2="689" y1="394" y2="392"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="694" x2="698" y1="391" y2="389"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="703" x2="708" y1="387" y2="386"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="713" x2="717" y1="384" y2="383"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="722" x2="727" y1="381" y2="380"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="732" x2="737" y1="378" y2="376"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="730" x2="740" y1="385" y2="375"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="726" x2="740" y1="372" y2="375"/>
+<text font-family="Dialog" font-size="12" x="571" y="382">
+&lt;&lt;extend&gt;&gt;</text>
+<ellipse cx="425" cy="93" fill="#000000" rx="67.0" ry="23.0" stroke="#000000" stroke-width="1"/>
+<ellipse cx="425" cy="93" fill="#c8ffff" rx="66.0" ry="22.0" stroke="#c8ffff" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="375" y="94">
+realizar cadastro</text>
+<polyline fill="none" points="444,115 490,168" stroke="#000000" stroke-width="1"/>
 </svg>
