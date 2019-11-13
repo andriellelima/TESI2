@@ -4,39 +4,38 @@ import java.util.*;
 
 import javax.persistence.*;
 
-import br.ufac.si.academico.entidades.Produto;
+import br.ufac.si.academico.entidades.Anunciar;
 
-public class ProdutoGerente {
+public class AnunciarGerente {
 
 	private EntityManagerFactory emf;
 	private EntityManager em;
 	
-	public ProdutoGerente() {
+	public AnunciarGerente() {
 		emf = Persistence.createEntityManagerFactory("SalesUFAC");
 		em = emf.createEntityManager();
 	}
 	
-	public void adicionar(Produto produto) {
-//		ProdutoGerente us = new ProdutoGerente();
+	public void adicionar(Anunciar anunciar) {
 		
 		em.getTransaction().begin();
-		em.persist(produto);
+		em.persist(anunciar);
 		em.getTransaction().commit();
 	}
 	
-	public Produto recuperar(long l) {
-		return em.find(Produto.class, l);
+	public Anunciar recuperar(int id) {
+		return em.find(Anunciar.class, id);
 	}
 	
-	public void atualizar(Produto produto) {
+	public void atualizar(Anunciar anunciar) {
 		em.getTransaction().begin();
-		em.merge(produto);
+		em.merge(anunciar);
 		em.getTransaction().commit();
 	}
 	
-	public void remover(Produto produto) {
+	public void remover(Anunciar anunciar) {
 		em.getTransaction().begin();
-		em.remove(produto);
+		em.remove(anunciar);
 		em.getTransaction().commit();
 	}
 	

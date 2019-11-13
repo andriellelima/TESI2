@@ -12,7 +12,7 @@ public class Usuario {
 	@Column(nullable=false, length=80)
 	private String nome;
 	@Column(nullable=false, length=11, unique = true) //apenas numeros e nao aceita cpf igual ao que estao cadastrado.
-//	@Column()
+
 	private String cpf;
 	@Column(nullable=false, length=10) // dd/mm/aaaa
 	private String dataNascimento;
