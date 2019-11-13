@@ -1,5 +1,7 @@
 package br.ufac.si.academico.entidades;
 
+import java.math.BigInteger;
+import java.security.*;
 import javax.persistence.*;
 
 @Entity
@@ -16,14 +18,16 @@ public class Usuario {
 	private String cpf;
 	@Column(nullable=false, length=10) // dd/mm/aaaa
 	private String dataNascimento;
-	@Column(nullable=false, length=15)
+	@Column(nullable=false)
 	private String senha;
-	public Usuario(String nome, String cpf, String dataNascimento, String senha) {
+	public Usuario(String nome, String cpf, String dataNascimento, String senha) throws NoSuchAlgorithmException {
 //		this.id = id;
+		MessageDigest m=MessageDigest.getInstance("MD5");
+		m.update(senha.getBytes(),0,senha.length());
 		this.nome = nome;
 		this.cpf = cpf;
 		this.dataNascimento = dataNascimento;
-		this.senha = senha;
+		this.senha = new BigInteger(1,m.digest()).toString(16);
 	}
 	
 	public int getId() {

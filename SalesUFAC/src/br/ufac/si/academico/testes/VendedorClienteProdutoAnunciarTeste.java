@@ -1,6 +1,7 @@
 package br.ufac.si.academico.testes;
 
 
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -13,7 +14,7 @@ import br.ufac.si.academico.gerentes.VendedorGerente;
 
 public class VendedorClienteProdutoAnunciarTeste {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NoSuchAlgorithmException {
 		VendedorGerente vg = new VendedorGerente();
 		UsuarioGerente ug = new UsuarioGerente();
 		ProdutoGerente pg = new ProdutoGerente();
@@ -41,5 +42,6 @@ public class VendedorClienteProdutoAnunciarTeste {
 		ag.encerrar();
 		vg.encerrar();
 		ug.encerrar();
+		pg.encerrar();
 	}
 }

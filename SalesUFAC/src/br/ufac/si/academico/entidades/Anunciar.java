@@ -13,12 +13,12 @@ public class Anunciar {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO) // gerador de ID automatico
 	private int id;
-
+	@ManyToOne
 	@JoinColumn(name="vendedor")
 	private Vendedor vendedor;
-	
-	@JoinColumn(name="produto")
-	private ArrayList <Produto> produtos;
+	@OneToMany
+	@JoinColumn(name="anuncio")
+	private List <Produto> produtos;
 	@Column(nullable=false)
 	private long quantProdutoDisp;
 	@Column(nullable=false)
@@ -47,10 +47,10 @@ public class Anunciar {
 	public void setVendedor(Vendedor vendedor) {
 		this.vendedor = vendedor;
 	}
-	public ArrayList<Produto> getProdutos() {
+	public List<Produto> getProdutos() {
 		return produtos;
 	}
-	public void setProdutos(ArrayList<Produto> produtos) {
+	public void setProdutos(List<Produto> produtos) {
 		this.produtos = produtos;
 	}
 	public long getQuantProdutoDisp() {
