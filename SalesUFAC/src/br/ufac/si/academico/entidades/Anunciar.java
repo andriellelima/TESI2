@@ -16,7 +16,7 @@ public class Anunciar {
 	@ManyToOne
 	@JoinColumn(name="vendedor")
 	private Vendedor vendedor;
-	@OneToMany
+	@ManyToMany
 	@JoinColumn(name="anuncio")
 	private List <Produto> produtos;
 	@Column(nullable=false)

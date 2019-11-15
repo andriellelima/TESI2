@@ -1,12 +1,14 @@
 package br.ufac.si.academico.testes;
 
+import java.security.NoSuchAlgorithmException;
+
 import br.ufac.si.academico.entidades.*;
 import br.ufac.si.academico.gerentes.UsuarioGerente;
 import br.ufac.si.academico.gerentes.VendedorGerente;
 
 public class VendedorClienteTeste {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NoSuchAlgorithmException {
 		VendedorGerente vg = new VendedorGerente();
 		UsuarioGerente ug = new UsuarioGerente();
 		

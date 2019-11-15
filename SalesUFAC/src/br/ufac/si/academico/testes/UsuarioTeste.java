@@ -1,11 +1,13 @@
 package br.ufac.si.academico.testes;
 
+import java.security.NoSuchAlgorithmException;
+
 import br.ufac.si.academico.entidades.Usuario;
 import br.ufac.si.academico.gerentes.UsuarioGerente;
 
 public class UsuarioTeste {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NoSuchAlgorithmException {
 		
 		UsuarioGerente ug = new UsuarioGerente();
 		
