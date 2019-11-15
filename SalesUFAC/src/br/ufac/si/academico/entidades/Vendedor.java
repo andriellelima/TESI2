@@ -13,7 +13,14 @@ public class Vendedor extends Usuario {
 	}
 	private String Funcao = "Vendedor";
 	private double Avaliacao;
+	private int quantaval; //quantas avalições ja teve
 	
+	public int getQuantaval() {
+		return quantaval;
+	}
+	public void setQuantaval(int quantaval) {
+		this.quantaval = quantaval;
+	}
 	public String getFunção() {
 		return Funcao;
 	}
@@ -25,6 +32,7 @@ public class Vendedor extends Usuario {
 	}
 	public void setAvaliacao(double avaliacao) {
 		Avaliacao = avaliacao;
+		setQuantaval(getQuantaval()+1);
 	}
 	
 	

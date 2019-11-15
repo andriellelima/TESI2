@@ -22,13 +22,28 @@ public class VendedorClienteProdutoTeste {
 		ug.adicionar(c1);
 		ug.adicionar(v2);
 		ug.adicionar(c2);
+		
 		Produto p1 = new Produto(55, "Brigadeiro", "Brigadeiro de varios sabores e varias coresbalabalablabalballksd", v1);
 		Produto p2 = new Produto(6, "Picole", "Picole é geldo", v2);
 		pg.adicionar(p1);
 		pg.adicionar(p2);
+		
+		vg.avali(v1, 5);
+		System.out.println(v1.getAvaliacao());
+		vg.avali(v1, 5);
+		System.out.println(v1.getAvaliacao());
+		vg.avali(v1, 2);
+		System.out.println(v1.getAvaliacao());
+		pg.avali(p1, 5);
+		System.out.println(v1.getAvaliacao());
+		pg.avali(p1, 5);
+		System.out.println(v1.getAvaliacao());
+		pg.avali(p1, 2);
+		System.out.println(v1.getAvaliacao());
 
 		
 		vg.encerrar();
 		ug.encerrar();
+		pg.encerrar();
 	}
 }

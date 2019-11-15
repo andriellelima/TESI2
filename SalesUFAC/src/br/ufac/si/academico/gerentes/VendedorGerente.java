@@ -27,6 +27,7 @@ public class VendedorGerente {
 	public Vendedor recuperar(int id) {
 		return em.find(Vendedor.class, id);
 	}
+
 	
 	public void atualizar(Vendedor vendedor) {
 		em.getTransaction().begin();
@@ -38,6 +39,12 @@ public class VendedorGerente {
 		em.getTransaction().begin();
 		em.remove(vendedor);
 		em.getTransaction().commit();
+	}
+	
+	public void avali(Vendedor ven, double nota) {
+//		Vendedor v = new Vendedor(nome, cpf, dataNascimento, senha)
+		ven.setAvaliacao(((ven.getAvaliacao()*ven.getQuantaval())+nota)/(ven.getQuantaval()+1));
+		atualizar(ven);
 	}
 	
 	

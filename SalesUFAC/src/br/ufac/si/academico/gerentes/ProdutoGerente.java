@@ -5,6 +5,7 @@ import java.util.*;
 import javax.persistence.*;
 
 import br.ufac.si.academico.entidades.Produto;
+import br.ufac.si.academico.entidades.Vendedor;
 
 public class ProdutoGerente {
 
@@ -38,6 +39,12 @@ public class ProdutoGerente {
 		em.getTransaction().begin();
 		em.remove(produto);
 		em.getTransaction().commit();
+	}
+	
+	public void avali(Produto pr, double nota) {
+//		Vendedor v = new Vendedor(nome, cpf, dataNascimento, senha)
+		pr.setAvaliacao(((pr.getAvaliacao()*pr.getQuantaval())+nota)/(pr.getQuantaval()+1));
+		atualizar(pr);
 	}
 	
 	
