@@ -4,6 +4,7 @@ import java.util.*;
 
 import javax.persistence.*;
 
+import br.ufac.si.academico.entidades.Cliente;
 import br.ufac.si.academico.entidades.Usuario;
 
 public class UsuarioGerente {
@@ -40,6 +41,23 @@ public class UsuarioGerente {
 		em.getTransaction().commit();
 	}
 	
+	@SuppressWarnings("unchecked")
+	public List<Usuario> recuperarTodos(){
+		return em.createNamedQuery("Usuario.todos")
+				.getResultList();	
+	}
+	@SuppressWarnings("unchecked")
+	public List<Usuario> recuperarTodosPorNome(){
+		return em.createNamedQuery("Usuario.todosPorNome")
+				.getResultList();
+	}
+	@SuppressWarnings("unchecked")
+	public List<Usuario> recuperarTodosPorNomeContendo(String termo){
+		return em
+				.createNamedQuery("Usuario.todosPorNomeContendo")
+				.setParameter("termo", "%"+termo+"%")
+				.getResultList();
+	}	
 	
 	public void encerrar() {
 		em.close();

@@ -9,6 +9,15 @@ import javax.persistence.*;
 
 @Entity
 @Table(name="anuncios")
+
+@NamedQueries({
+	@NamedQuery(name="Anunciar.todos", 
+		query="SELECT a FROM Anunciar a"), 
+	@NamedQuery(name="Anunciar.todosPorNome", 
+		query="SELECT a FROM Anunciar a ORDER BY a.nome"),
+	@NamedQuery(name="Anunciar.todosPorNomeContendo", 
+		query="SELECT a FROM Anunciar a WHERE a.nome LIKE :termo ORDER BY a.nome")		
+})
 public class Anunciar {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO) // gerador de ID automatico
@@ -26,7 +35,7 @@ public class Anunciar {
 	@Column(nullable=false)
 	private String dtfim;
 	
-	
+	public Anunciar() {}
 	
 	public Anunciar(Vendedor vendedor, ArrayList<Produto> produtos, long quantProdutoDisp, String dtinicio, String dtfim)  {
 		this.vendedor = vendedor;

@@ -5,42 +5,40 @@ import java.util.*;
 import javax.persistence.*;
 
 import br.ufac.si.academico.entidades.Cliente;
-import br.ufac.si.academico.entidades.Vendedor;
+import br.ufac.si.academico.entidades.Venda;
 
-public class ClienteGerente {
+public class VendaGerente {
 
 	private EntityManagerFactory emf;
 	private EntityManager em;
 	
-	public ClienteGerente() {
+	public VendaGerente() {
 		emf = Persistence.createEntityManagerFactory("SalesUFAC");
 		em = emf.createEntityManager();
 	}
 	
-	public void adicionar(Cliente cliente) {
-//		ClienteGerente us = new ClienteGerente();
+	public void adicionar(Venda venda) {
 		
 		em.getTransaction().begin();
-		em.persist(cliente);
+		em.persist(venda);
 		em.getTransaction().commit();
 	}
 	
-	public Cliente recuperar(int id) {
-		return em.find(Cliente.class, id);
+	public Venda recuperar(int id) {
+		return em.find(Venda.class, id);
 	}
 	
-	public void atualizar(Cliente cliente) {
+	public void atualizar(Venda venda) {
 		em.getTransaction().begin();
-		em.merge(cliente);
+		em.merge(venda);
 		em.getTransaction().commit();
 	}
 	
-	public void remover(Cliente cliente) {
+	public void remover(Venda venda) {
 		em.getTransaction().begin();
-		em.remove(cliente);
+		em.remove(venda);
 		em.getTransaction().commit();
 	}
-
 	
 	
 	public void encerrar() {
@@ -48,20 +46,21 @@ public class ClienteGerente {
 		emf.close();
 	}
 	
+
 	@SuppressWarnings("unchecked")
-	public List<Cliente> recuperarTodos(){
-		return em.createNamedQuery("Cliente.todos")
+	public List<Venda> recuperarTodos(){
+		return em.createNamedQuery("Venda.todos")
 				.getResultList();	
 	}
 	@SuppressWarnings("unchecked")
-	public List<Cliente> recuperarTodosPorNome(){
-		return em.createNamedQuery("Cliente.todosPorNome")
+	public List<Venda> recuperarTodosPorNome(){
+		return em.createNamedQuery("Venda.todosPorNome")
 				.getResultList();
 	}
 	@SuppressWarnings("unchecked")
-	public List<Cliente> recuperarTodosPorNomeContendo(String termo){
+	public List<Venda> recuperarTodosPorNomeContendo(String termo){
 		return em
-				.createNamedQuery("Cliente.todosPorNomeContendo")
+				.createNamedQuery("Venda.todosPorNomeContendo")
 				.setParameter("termo", "%"+termo+"%")
 				.getResultList();
 	}	

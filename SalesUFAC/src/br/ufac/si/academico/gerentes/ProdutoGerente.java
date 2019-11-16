@@ -4,6 +4,7 @@ import java.util.*;
 
 import javax.persistence.*;
 
+import br.ufac.si.academico.entidades.Cliente;
 import br.ufac.si.academico.entidades.Produto;
 import br.ufac.si.academico.entidades.Vendedor;
 
@@ -46,6 +47,24 @@ public class ProdutoGerente {
 		pr.setAvaliacao(((pr.getAvaliacao()*pr.getQuantaval())+nota)/(pr.getQuantaval()+1));
 		atualizar(pr);
 	}
+	
+	@SuppressWarnings("unchecked")
+	public List<Produto> recuperarTodos(){
+		return em.createNamedQuery("Produto.todos")
+				.getResultList();	
+	}
+	@SuppressWarnings("unchecked")
+	public List<Produto> recuperarTodosPorNome(){
+		return em.createNamedQuery("Produto.todosPorNome")
+				.getResultList();
+	}
+	@SuppressWarnings("unchecked")
+	public List<Produto> recuperarTodosPorNomeContendo(String termo){
+		return em
+				.createNamedQuery("Produto.todosPorNomeContendo")
+				.setParameter("termo", "%"+termo+"%")
+				.getResultList();
+	}	
 	
 	
 	public void encerrar() {

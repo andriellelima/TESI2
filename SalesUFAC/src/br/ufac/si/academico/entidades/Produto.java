@@ -4,6 +4,14 @@ import javax.persistence.*;
 
 @Entity
 @Table(name="produtos")
+@NamedQueries({
+	@NamedQuery(name="Produto.todos", 
+		query="SELECT p FROM Produto p"), 
+	@NamedQuery(name="Produto.todosPorNome", 
+		query="SELECT p FROM Produto p ORDER BY p.nome"),
+	@NamedQuery(name="Produto.todosPorNomeContendo", 
+		query="SELECT p FROM Produto p WHERE p.nome LIKE :termo ORDER BY p.nome")		
+})
 
 public class Produto {
 	@Id
@@ -22,6 +30,8 @@ public class Produto {
 	private Vendedor vendedor;
 	private int quantaval; //quantas avalições ja teve
 //	private double Avaliacao;
+	
+	public Produto() {}
 	
 	public Produto(long quantidade, String nome, String descricao, Vendedor vendedor) {
 		this.quantidade = quantidade;

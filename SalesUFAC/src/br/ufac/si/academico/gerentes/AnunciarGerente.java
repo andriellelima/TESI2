@@ -5,6 +5,7 @@ import java.util.*;
 import javax.persistence.*;
 
 import br.ufac.si.academico.entidades.Anunciar;
+import br.ufac.si.academico.entidades.Cliente;
 
 public class AnunciarGerente {
 
@@ -38,7 +39,24 @@ public class AnunciarGerente {
 		em.remove(anunciar);
 		em.getTransaction().commit();
 	}
-	
+
+	@SuppressWarnings("unchecked")
+	public List<Anunciar> recuperarTodos(){
+		return em.createNamedQuery("Anunciar.todos")
+				.getResultList();	
+	}
+	@SuppressWarnings("unchecked")
+	public List<Anunciar> recuperarTodosPorNome(){
+		return em.createNamedQuery("Anunciar.todosPorNome")
+				.getResultList();
+	}
+	@SuppressWarnings("unchecked")
+	public List<Anunciar> recuperarTodosPorNomeContendo(String termo){
+		return em
+				.createNamedQuery("Anunciar.todosPorNomeContendo")
+				.setParameter("termo", "%"+termo+"%")
+				.getResultList();
+	}	
 	
 	public void encerrar() {
 		em.close();

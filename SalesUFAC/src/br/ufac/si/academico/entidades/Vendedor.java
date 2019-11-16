@@ -6,7 +6,17 @@ import javax.persistence.*;
 @Entity
 @Table(name="vendedores")
 @PrimaryKeyJoinColumn(name="id")
+@NamedQueries({
+	@NamedQuery(name="Vendedor.todos", 
+		query="SELECT v FROM Vendedor v"), 
+	@NamedQuery(name="Vendedor.todosPorNome", 
+		query="SELECT v FROM Vendedor v ORDER BY v.nome"),
+	@NamedQuery(name="Vendedor.todosPorNomeContendo", 
+		query="SELECT v FROM Vendedor v WHERE v.nome LIKE :termo ORDER BY v.nome")		
+})
 public class Vendedor extends Usuario {
+	
+	public Vendedor() {}
 
 	public Vendedor(String nome, String cpf, String dataNascimento, String senha) throws NoSuchAlgorithmException {
 		super(nome, cpf, dataNascimento, senha);

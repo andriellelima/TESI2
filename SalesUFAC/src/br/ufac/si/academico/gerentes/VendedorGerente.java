@@ -53,4 +53,22 @@ public class VendedorGerente {
 		emf.close();
 	}
 	
+	@SuppressWarnings("unchecked")
+	public List<Vendedor> recuperarTodos(){
+		return em.createNamedQuery("Vendedor.todos")
+				.getResultList();	
+	}
+	@SuppressWarnings("unchecked")
+	public List<Vendedor> recuperarTodosPorNome(){
+		return em.createNamedQuery("Vendedor.todosPorNome")
+				.getResultList();
+	}
+	@SuppressWarnings("unchecked")
+	public List<Vendedor> recuperarTodosPorNomeContendo(String termo){
+		return em
+				.createNamedQuery("Vendedor.todosPorNomeContendo")
+				.setParameter("termo", "%"+termo+"%")
+				.getResultList();
+	}	
+	
 }

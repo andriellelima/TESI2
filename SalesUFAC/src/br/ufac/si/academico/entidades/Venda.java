@@ -5,6 +5,15 @@ import javax.persistence.*;
 @Entity
 @Table(name="vendas")
 
+@NamedQueries({
+	@NamedQuery(name="Venda.todos", 
+		query="SELECT v FROM Venda v"), 
+	@NamedQuery(name="Venda.todosPorNome", 
+		query="SELECT v FROM Venda v ORDER BY v.nome"),
+	@NamedQuery(name="Venda.todosPorNomeContendo", 
+		query="SELECT v FROM Venda v WHERE v.nome LIKE :termo ORDER BY v.nome")		
+})
+
 public class Venda {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO) // gerador de ID automatico
@@ -25,6 +34,9 @@ public class Venda {
 	@ManyToOne()
 	@JoinColumn(name="cliente")
 	private Cliente cliente;
+	
+	public Venda() {}
+	
 	public Venda(long id, String dataVenda, Produto produto, int quantidade, double valor, int pontosFidelidade,
 			Vendedor vendedor, Cliente cliente) {
 		this.id = id;
