@@ -66,4 +66,11 @@ public class ClienteGerente {
 				.getResultList();
 	}	
 	
+	@SuppressWarnings("unchecked")
+	public List<Cliente> recuperaID(long termo) {
+		return em.createNamedQuery("Cliente.porid")
+				.setParameter("termo", termo)
+				.getResultList();
+	}
+	
 }

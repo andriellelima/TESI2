@@ -8,11 +8,13 @@ import javax.persistence.*;
 @PrimaryKeyJoinColumn(name="id")
 @NamedQueries({
 	@NamedQuery(name="Vendedor.todos", 
-		query="SELECT v FROM Vendedor v"), 
+		query="SELECT v FROM vendedores v"), 
 	@NamedQuery(name="Vendedor.todosPorNome", 
-		query="SELECT v FROM Vendedor v ORDER BY v.nome"),
+		query="SELECT v FROM vendedores v ORDER BY v.nome"),
 	@NamedQuery(name="Vendedor.todosPorNomeContendo", 
-		query="SELECT v FROM Vendedor v WHERE v.nome LIKE :termo ORDER BY v.nome")		
+		query="SELECT v FROM vendedores v WHERE v.nome LIKE :termo ORDER BY v.nome"),
+	@NamedQuery(name="Vendedor.porid", 
+	query="SELECT v FROM vendedores WHERE v.id = :termo")
 })
 public class Vendedor extends Usuario {
 	

@@ -4,6 +4,7 @@ import java.util.*;
 
 import javax.persistence.*;
 
+import br.ufac.si.academico.entidades.Cliente;
 import br.ufac.si.academico.entidades.Vendedor;
 
 public class VendedorGerente {
@@ -70,5 +71,11 @@ public class VendedorGerente {
 				.setParameter("termo", "%"+termo+"%")
 				.getResultList();
 	}	
+	@SuppressWarnings("unchecked")
+	public List<Vendedor> recuperaID(long termo) {
+		return em.createNamedQuery("Vendedor.porid")
+				.setParameter("termo", termo)
+				.getResultList();
+	}
 	
 }

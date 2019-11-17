@@ -7,11 +7,11 @@ import javax.persistence.*;
 
 @NamedQueries({
 	@NamedQuery(name="Venda.todos", 
-		query="SELECT v FROM Venda v"), 
+			query="SELECT v FROM Venda v"), 
 	@NamedQuery(name="Venda.todosPorNome", 
-		query="SELECT v FROM Venda v ORDER BY v.nome"),
+	query="SELECT v FROM Venda v ORDER BY v.nome"),
 	@NamedQuery(name="Venda.todosPorNomeContendo", 
-		query="SELECT v FROM Venda v WHERE v.nome LIKE :termo ORDER BY v.nome")		
+	query="SELECT v FROM Venda v WHERE v.nome LIKE :termo ORDER BY v.nome")		
 })
 
 public class Venda {
@@ -27,28 +27,29 @@ public class Venda {
 	private int quantidade;
 	@Column(nullable=false)
 	private double valor;
-	private int pontosFidelidade;
+	//	private int pontosFidelidade;
 	@ManyToOne()
 	@JoinColumn(name="vendedor")
 	private Vendedor vendedor;
 	@ManyToOne()
 	@JoinColumn(name="cliente")
 	private Cliente cliente;
-	
+
 	public Venda() {}
-	
-	public Venda(long id, String dataVenda, Produto produto, int quantidade, double valor, int pontosFidelidade,
-			Vendedor vendedor, Cliente cliente) {
+
+	public Venda(long id, String dataVenda, Produto produto, int quantidade, double valor, Vendedor vendedor, Cliente cliente) {
 		this.id = id;
 		this.dataVenda = dataVenda;
 		this.produto = produto;
 		this.quantidade = quantidade;
 		this.valor = valor;
-		this.pontosFidelidade = pontosFidelidade;
+		//		this.pontosFidelidade = pontosFidelidade;
 		this.vendedor = vendedor;
 		this.cliente = cliente;
+
+		cliente.setFidelidade((int) (cliente.getFidelidade()+quantidade));
 	}
-	
+
 	public long getId() {
 		return id;
 	}
@@ -79,12 +80,12 @@ public class Venda {
 	public void setValor(double valor) {
 		this.valor = valor;
 	}
-	public int getPontosFidelidade() {
-		return pontosFidelidade;
-	}
-	public void setPontosFidelidade(int pontosFidelidade) {
-		this.pontosFidelidade = pontosFidelidade;
-	}
+	//	public int getPontosFidelidade() {
+	//		return pontosFidelidade;
+	//	}
+	//	public void setPontosFidelidade(int pontosFidelidade) {
+	//		this.pontosFidelidade = pontosFidelidade;
+	//	}
 	public Vendedor getVendedor() {
 		return vendedor;
 	}
@@ -97,9 +98,9 @@ public class Venda {
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
 	}
-	
-	
 
-	
-	
+
+
+
+
 }
