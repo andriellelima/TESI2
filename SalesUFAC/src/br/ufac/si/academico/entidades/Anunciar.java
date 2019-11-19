@@ -10,14 +10,14 @@ import javax.persistence.*;
 @Entity
 @Table(name="anuncios")
 
-@NamedQueries({
-	@NamedQuery(name="Anunciar.todos", 
-		query="SELECT a FROM anuncios a"), 
-	@NamedQuery(name="Anunciar.todosPorNome", 
-		query="SELECT a FROM anuncios a ORDER BY a.nome"),
-	@NamedQuery(name="Anunciar.todosPorNomeContendo", 
-		query="SELECT a FROM anuncios a WHERE a.nome LIKE :termo ORDER BY a.nome")		
-})
+//@NamedQueries({
+//	@NamedQuery(name="Anunciar.todos", 
+//		query="SELECT a FROM Anunciar a"), 
+//	@NamedQuery(name="Anunciar.todosPorNome", 
+//		query="SELECT a FROM Anunciar a ORDER BY a.nome"),
+////	@NamedQuery(name="Anunciar.todosPorNomeContendo", 
+//		query="SELECT a FROM Anunciar a WHERE a.nome LIKE :termo ORDER BY a.nome")		
+//})
 public class Anunciar {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO) // gerador de ID automatico

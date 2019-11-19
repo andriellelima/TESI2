@@ -76,11 +76,11 @@ public class UsuarioControlador {
 		this.chave = chave;
 	}
 	
-	public String Login(String nome, String senha) throws NoSuchAlgorithmException {
-		Usuario us = (Usuario) ug.recuperarTodosPorNomeContendo(nome);
+	public String Login(String email, String senha) throws NoSuchAlgorithmException {
+		Usuario us = (Usuario) ug.poremail(email);
 		MessageDigest m=MessageDigest.getInstance("MD5");
 		m.update(senha.getBytes(),0,senha.length());
-		if(us.getNome() == nome && us.getSenha() == new BigInteger(1,m.digest()).toString(16)) {
+		if(us.getEmail() == email && us.getSenha() == new BigInteger(1,m.digest()).toString(16)) {
 			Cliente c = (Cliente) cg.recuperaID(us.getId());
 			if(c.getFunção() == "Cliente") {
 				return "Cliente";

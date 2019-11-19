@@ -5,14 +5,14 @@ import javax.persistence.*;
 @Entity
 @Table(name="vendas")
 
-@NamedQueries({
-	@NamedQuery(name="Venda.todos", 
-			query="SELECT v FROM vendas v"), 
-	@NamedQuery(name="Venda.todosPorNome", 
-	query="SELECT v FROM vendas v ORDER BY v.nome"),
-	@NamedQuery(name="Venda.todosPorNomeContendo", 
-	query="SELECT v FROM vendas v WHERE v.nome LIKE :termo ORDER BY v.nome")		
-})
+//@NamedQueries({
+//	@NamedQuery(name="Venda.todos", 
+//	query="SELECT v FROM Venda v"), 
+//	@NamedQuery(name="Venda.todosPorNome", 
+//	query="SELECT v FROM Venda v ORDER BY v.nome"),
+//	@NamedQuery(name="Venda.todosPorNomeContendo", 
+//	query="SELECT v FROM Venda v WHERE v.nome LIKE :termo ORDER BY v.nome")		
+//})
 
 public class Venda {
 	@Id

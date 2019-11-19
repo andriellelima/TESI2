@@ -58,6 +58,13 @@ public class UsuarioGerente {
 				.setParameter("termo", "%"+termo+"%")
 				.getResultList();
 	}	
+	@SuppressWarnings("unchecked")
+	public List<Usuario> poremail(String termo){
+		return em
+				.createNamedQuery("Usuario.poremail")
+				.setParameter("termo", "%"+termo+"%")
+				.getResultList();
+	}	
 	
 	public void encerrar() {
 		em.close();

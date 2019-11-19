@@ -6,11 +6,11 @@ import javax.persistence.*;
 @Table(name="produtos")
 @NamedQueries({
 	@NamedQuery(name="Produto.todos", 
-		query="SELECT p FROM produtos p"), 
+		query="SELECT p FROM Produto p"), 
 	@NamedQuery(name="Produto.todosPorNome", 
-		query="SELECT p FROM produtos p ORDER BY p.nome"),
+		query="SELECT p FROM Produto p ORDER BY p.nome"),
 	@NamedQuery(name="Produto.todosPorNomeContendo", 
-		query="SELECT p FROM produtos p WHERE p.nome LIKE :termo ORDER BY p.nome")		
+		query="SELECT p FROM Produto p WHERE p.nome LIKE :termo ORDER BY p.nome")		
 })
 
 public class Produto {

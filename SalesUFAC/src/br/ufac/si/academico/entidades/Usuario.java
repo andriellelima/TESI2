@@ -9,11 +9,13 @@ import javax.persistence.*;
 @Inheritance(strategy = InheritanceType.JOINED)
 @NamedQueries({
 	@NamedQuery(name="Usuario.todos", 
-		query="SELECT u FROM usuarios u"), 
+		query="SELECT u FROM Usuario u"), 
 	@NamedQuery(name="Usuario.todosPorNome", 
-		query="SELECT u FROM usuarios u ORDER BY u.nome"),
+		query="SELECT u FROM Usuario u ORDER BY u.nome"),
 	@NamedQuery(name="Usuario.todosPorNomeContendo", 
-		query="SELECT u FROM usuarios u WHERE u.nome LIKE :termo ORDER BY u.nome")		
+		query="SELECT u FROM Usuario u WHERE u.nome LIKE :termo ORDER BY u.nome")	,
+	@NamedQuery(name="Usuario.poremail", 
+	query="SELECT u FROM Usuario u WHERE u.email LIKE :termo ORDER BY u.email")	
 })
 public class Usuario {
 	@Id
@@ -24,6 +26,8 @@ public class Usuario {
 	@Column(nullable=false, length=11, unique = true) //apenas numeros e nao aceita cpf igual ao que estao cadastrado.
 
 	private String cpf;
+	@Column(unique=true, nullable=false)
+	private String email;
 	@Column(nullable=false, length=10) // dd/mm/aaaa
 	private String dataNascimento;
 	@Column(nullable=false)
@@ -31,12 +35,13 @@ public class Usuario {
 	
 	public Usuario() {}
 	
-	public Usuario(String nome, String cpf, String dataNascimento, String senha) throws NoSuchAlgorithmException {
+	public Usuario(String nome, String cpf, String email, String dataNascimento, String senha) throws NoSuchAlgorithmException {
 //		this.id = id;
 		MessageDigest m=MessageDigest.getInstance("MD5");
 		m.update(senha.getBytes(),0,senha.length());
 		this.nome = nome;
 		this.cpf = cpf;
+		this.email = email;
 		this.dataNascimento = dataNascimento;
 		this.senha = new BigInteger(1,m.digest()).toString(16);
 	}
@@ -71,6 +76,16 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	
 	
 	
 	
