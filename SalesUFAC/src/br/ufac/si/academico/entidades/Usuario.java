@@ -15,7 +15,9 @@ import javax.persistence.*;
 	@NamedQuery(name="Usuario.todosPorNomeContendo", 
 		query="SELECT u FROM Usuario u WHERE u.nome LIKE :termo ORDER BY u.nome")	,
 	@NamedQuery(name="Usuario.poremail", 
-	query="SELECT u FROM Usuario u WHERE u.email LIKE :termo ORDER BY u.email")	
+	query="SELECT u FROM Usuario u WHERE u.email LIKE :termo ORDER BY u.email"),
+	@NamedQuery(name = "Usuario.login",
+	query = "SELECT c FROM Usuario c WHERE c.email = :email AND c.senha = :senha")
 })
 public class Usuario {
 	@Id
@@ -41,11 +43,13 @@ public class Usuario {
 		m.update(senha.getBytes(),0,senha.length());
 		this.nome = nome;
 		this.cpf = cpf;
-		this.email = email;
+		this.email = email.trim().toLowerCase();
 		this.dataNascimento = dataNascimento;
 		this.senha = new BigInteger(1,m.digest()).toString(16);
 	}
-	
+	@Transient
+    public static final String login = "Usuario.login";       
+
 	public int getId() {
 		return id;
 	}
@@ -82,9 +86,10 @@ public class Usuario {
 	}
 
 	public void setEmail(String email) {
-		this.email = email;
+		this.email = email.trim().toLowerCase();;
 	}
 	
+
 	
 	
 	

@@ -77,25 +77,22 @@ public class UsuarioControlador {
 	}
 	
 	public String Login(String email, String senha) throws NoSuchAlgorithmException {
-		Usuario us = (Usuario) ug.poremail(email);
 		MessageDigest m=MessageDigest.getInstance("MD5");
 		m.update(senha.getBytes(),0,senha.length());
-		if(us.getEmail() == email && us.getSenha() == new BigInteger(1,m.digest()).toString(16)) {
-			Cliente c = (Cliente) cg.recuperaID(us.getId());
-			if(c.getFunção() == "Cliente") {
+		Usuario us = (Usuario) ug.logar(email, new BigInteger(1,m.digest()).toString(16));
+		if(us != null) {
+			if(cg.recuperaID(us.getId())!=null) {
 				return "Cliente";
 			}else {
-				Vendedor v = (Vendedor) vg.recuperar(us.getId());
-				if(v.getFunção() == "Vendedor") {
+				if(vg.recuperaID(us.getId())!=null) {
 					return "Vendedor";
 				}
 			}
-			
-		} else {
-			return "Nome ou senha incorretos";
+		}else {
+			return "Email ou senha incorretos";
 		}
 		
-		return "Não encontrado";
+		return "Um erro inesperado ocorreu, tente novamente";
 		
 	}
 

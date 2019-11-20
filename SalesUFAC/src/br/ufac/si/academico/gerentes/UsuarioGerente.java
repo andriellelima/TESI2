@@ -1,6 +1,7 @@
 package br.ufac.si.academico.gerentes;
 
 import java.util.*;
+import java.util.logging.Logger;
 
 import javax.persistence.*;
 
@@ -65,10 +66,21 @@ public class UsuarioGerente {
 				.setParameter("termo", "%"+termo+"%")
 				.getResultList();
 	}	
+	public List<Usuario> logar(String email, String senha) {
+		email = email.toLowerCase().trim();
+		List <Usuario> user = em.createNamedQuery("Usuario.login").setParameter("email", email.trim())
+				.setParameter("senha", senha).getResultList();
+		if(user.size()==1) {
+			return user;
+		}
+		return null;
+	}
 	
 	public void encerrar() {
 		em.close();
 		emf.close();
 	}
 	
+	
+
 }
