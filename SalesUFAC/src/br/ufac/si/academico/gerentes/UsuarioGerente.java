@@ -1,5 +1,8 @@
 package br.ufac.si.academico.gerentes;
 
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.*;
 import java.util.logging.Logger;
 
@@ -66,13 +69,40 @@ public class UsuarioGerente {
 				.setParameter("termo", "%"+termo+"%")
 				.getResultList();
 	}	
-	public List<Usuario> logar(String email, String senha) {
-		email = email.toLowerCase().trim();
-		List <Usuario> user = em.createNamedQuery("Usuario.login").setParameter("email", email.trim())
-				.setParameter("senha", senha).getResultList();
-		if(user.size()==1) {
-			return user;
+	
+	public Usuario recuperaruser(String email, String senha) {
+		return (Usuario) em.createNamedQuery("Usuario.login").setParameter("email", email)
+				.setParameter("senha",  senha).getSingleResult();
+	}
+//	public void logar() {
+//		email = email.toLowerCase().trim();
+//		List <Usuario> user = em.createNamedQuery("Usuario.login").setParameter("email", )
+//				.setParameter("senha", senha).getResultList();
+//		if(user.size()==1) {
+//			
+//		}
+//	}
+	
+	private List<Usuario> usuarios = new ArrayList<Usuario>();
+	
+//	public UsuarioGerente() {
+//		usuarios.add(new Usuario("lulinhasemdedo", "lulinha", "123456789"));
+//		usuarios.add(new Usuario("dirma", "dilminha", "123456789"));
+//		usuarios.add(new Usuario("bolso", "bolsonaro", "123456789"));
+//		
+//	}
+
+	public Usuario recuperar(String login, String senha) throws NoSuchAlgorithmException {
+		MessageDigest m=MessageDigest.getInstance("MD5");
+		m.update(senha.getBytes(),0,senha.length());
+		String Senha = new BigInteger(1,m.digest()).toString(16);
+		usuarios = recuperarTodos();
+		for(Usuario usuario : usuarios) {
+			if(usuario.getEmail().equals(login) && usuario.getSenha().equals(Senha)) {
+				return usuario;
+			}
 		}
+			
 		return null;
 	}
 	

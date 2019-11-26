@@ -22,4 +22,13 @@
   <listener>
     <listener-class>com.sun.faces.config.ConfigureListener</listener-class>
   </listener>
+  <!--  login filter -->
+<filter>
+    <filter-name>loginFiltro</filter-name>
+    <filter-class>br.ufac.si.academico.filtros.loginFiltro</filter-class>    
+</filter>
+<filter-mapping>
+    <filter-name>loginFiltro</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping> 
 </web-app>
