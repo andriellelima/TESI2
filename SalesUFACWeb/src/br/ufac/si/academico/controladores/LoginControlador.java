@@ -55,8 +55,15 @@ public class LoginControlador {
 //		usuarioLogado = (Usuario) context.getExternalContext().getSessionMap().get("usuarioLogado");
 		
 		if(usuarioLogado != null) {
+			System.out.println(usuarioLogado);
 			context.getExternalContext().getSessionMap().put("usuarioLogado", usuarioLogado);
-			return "index.xhtml?faces-redirect=true";
+			System.out.println("DIZ ELE QUE O MICKAEL É CLIENTE " + usuarioLogado.getFuncao());
+			if(usuarioLogado.getFuncao().equals("Cliente")) {
+				return "index.xhtml?faces-redirect=true";
+			}else //if(usuarioLogado.getFuncao().equals("Vendedor")){
+				System.out.println("TEM CERTEZA?");
+				return "incluirProduto.xhtml?faces-redirect=true";
+			//}
 		}else {
 //			return "login.xhtml?faces-redirect=true";
 			return null;

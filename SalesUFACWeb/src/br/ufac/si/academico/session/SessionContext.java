@@ -19,7 +19,7 @@ public class SessionContext {
          return instance;
     }
      
-    private SessionContext(){
+    public SessionContext(){
           
     }
      

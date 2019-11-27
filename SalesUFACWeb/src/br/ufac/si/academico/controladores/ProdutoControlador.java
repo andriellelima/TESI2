@@ -2,6 +2,7 @@ package br.ufac.si.academico.controladores;
 
 import java.util.*;
 import javax.faces.bean.*;
+import javax.faces.context.FacesContext;
 
 import br.ufac.si.academico.entidades.*;
 import br.ufac.si.academico.gerentes.*;
@@ -11,14 +12,17 @@ import br.ufac.si.academico.gerentes.*;
 public class ProdutoControlador {
 
 	private ProdutoGerente pg;
-
+	private LoginControlador lc;
+	private VendedorGerente vg;
 	private Produto produto;
 	private String chave = "";
 
 	
 	public ProdutoControlador() {
 		pg = new ProdutoGerente();
-
+		lc = new LoginControlador();
+		vg = new VendedorGerente();
+		
 	}
 
 	public String incluir() {
@@ -37,7 +41,13 @@ public class ProdutoControlador {
 	}
 	
 	public String adicionar() {
+		//FacesContext context = FacesContext.getCurrentInstance();
+		//System.out.println("entrouOOOOOOOOO");
+		//lc.getUsuariologado();
+		//produto.setVendedor(vg.recuperaID(lc.getUsuariologado().getId()));
 		pg.adicionar(produto);
+		//context.getExternalContext().getSessionMap();
+		
 		return "produtoGerenciamento";
 	}
 	

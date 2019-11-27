@@ -21,9 +21,8 @@ public class Vendedor extends Usuario {
 	public Vendedor() {}
 
 	public Vendedor(String nome, String cpf, String email, String dataNascimento, String senha) throws NoSuchAlgorithmException {
-		super(nome, cpf,email, dataNascimento, senha);
+		super(nome, cpf,email, dataNascimento, senha, "Vendedor");
 	}
-	private String Funcao = "Vendedor";
 	private double Avaliacao;
 	private int quantaval; //quantas avalições ja teve
 	
@@ -32,12 +31,6 @@ public class Vendedor extends Usuario {
 	}
 	public void setQuantaval(int quantaval) {
 		this.quantaval = quantaval;
-	}
-	public String getFunção() {
-		return Funcao;
-	}
-	public void setFunção(String função) {
-		Funcao = função;
 	}
 	public double getAvaliacao() {
 		return Avaliacao;

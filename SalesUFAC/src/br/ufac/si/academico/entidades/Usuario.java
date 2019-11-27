@@ -34,10 +34,12 @@ public class Usuario {
 	private String dataNascimento;
 	@Column(nullable=false)
 	private String senha;
+	@Column(nullable=false)
+	private String Funcao;
 	
 	public Usuario() {}
 	
-	public Usuario(String nome, String cpf, String email, String dataNascimento, String senha) throws NoSuchAlgorithmException {
+	public Usuario(String nome, String cpf, String email, String dataNascimento, String senha, String funcao) throws NoSuchAlgorithmException {
 //		this.id = id;
 		MessageDigest m=MessageDigest.getInstance("MD5");
 		m.update(senha.getBytes(),0,senha.length());
@@ -46,6 +48,7 @@ public class Usuario {
 		this.email = email.trim().toLowerCase();
 		this.dataNascimento = dataNascimento;
 		this.senha = new BigInteger(1,m.digest()).toString(16);
+		this.Funcao = funcao;
 	}
 	@Transient
     public static final String login = "Usuario.login";       
@@ -87,6 +90,19 @@ public class Usuario {
 
 	public void setEmail(String email) {
 		this.email = email.trim().toLowerCase();;
+	}
+	
+
+	public String getFuncao() {
+		return Funcao;
+	}
+
+	public void setFuncao(String funcao) {
+		Funcao = funcao;
+	}
+
+	public static String getLogin() {
+		return login;
 	}
 
 	@Override

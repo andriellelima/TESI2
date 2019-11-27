@@ -72,10 +72,8 @@ public class VendedorGerente {
 				.getResultList();
 	}	
 	@SuppressWarnings("unchecked")
-	public List<Vendedor> recuperaID(long termo) {
-		return em.createNamedQuery("Vendedor.porid")
-				.setParameter("termo", termo)
-				.getResultList();
+	public Vendedor recuperaID(long termo) {
+		return (Vendedor) em.createNamedQuery("Vendedor.porid").setParameter("termo", termo).getSingleResult();
 	}
 	
 }

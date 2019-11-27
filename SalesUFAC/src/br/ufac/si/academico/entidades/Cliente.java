@@ -21,17 +21,10 @@ public class Cliente extends Usuario {
 	public Cliente() {}
 	
 	public Cliente(String nome, String cpf,String email, String dataNascimento, String senha) throws NoSuchAlgorithmException {
-		super(nome, cpf,email, dataNascimento, senha);
+		super(nome, cpf,email, dataNascimento, senha, "Cliente");
 	}
-	private String Função = "Cliente";
 	private int Fidelidade;
 	
-	public String getFunção() {
-		return Função;
-	}
-	public void setFunção(String função) {
-		Função = função;
-	}
 	public double getFidelidade() {
 		return Fidelidade;
 	}
