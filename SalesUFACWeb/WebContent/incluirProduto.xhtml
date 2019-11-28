@@ -3,7 +3,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" 
 	  xmlns:h="http://java.sun.com/jsf/html" 
-	  xmlns:f="htpp://java.sun.com/jsf/core"
+	  xmlns:f="http://java.sun.com/jsf/core"
 	  xmlns:c="http://java.sun.com/jsp/jstl/core">
 	  
 	<head>
@@ -46,11 +46,12 @@
 		    <label for="exampleFormControlInput1">Quantidade do Produto:</label>
 		    <h:inputText type="email" class="form-control" id="exampleFormControlInput1" value="#{produtoControlador.produto.quantidade}" />
 		 </div>
-		 
-		 <h:commandButton type="button" class="btn btn-outline-success" action="#{produtoControlador.adicionar}" value="Confirmar">
-		 <c
-		 </h:commandButton>
-		 <button type="button" class="btn btn-outline-danger">Cancelar</button>
+		 	<h:form>
+		 		<h:commandButton type="button" class="btn btn-outline-success" action="#{produtoControlador.adicionar}" value="Confirmar" onclick = "alert('Produto salvo com sucesso!');">
+		 	
+				 </h:commandButton>
+			</h:form>
+		 <h:commandButton type="button" class="btn btn-outline-danger" value="Cancelar" action="#{produtoControlador.canc}"></h:commandButton>
 		 <br></br><br></br>
     </form>
  
