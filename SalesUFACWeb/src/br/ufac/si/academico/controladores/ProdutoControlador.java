@@ -41,14 +41,16 @@ public class ProdutoControlador {
 	}
 	
 	public String adicionar() {
-		//FacesContext context = FacesContext.getCurrentInstance();
-		//System.out.println("entrouOOOOOOOOO");
-		lc.getUsuariologado();
-		produto.setVendedor(vg.recuperaID(lc.getUsuariologado().getId()));
+		FacesContext context = FacesContext.getCurrentInstance();
+//		System.out.println("entrouOOOOOOOOO");
+//		lc.getUsuariologado();
+//		produto.setVendedor(vg.recuperaID(lc.getUsuariologado().getId()));
+		Vendedor ven = (Vendedor) context.getExternalContext().getSessionMap().get("usuarioLogado");
+		produto.setVendedor(ven);
 		pg.adicionar(produto);
-		//context.getExternalContext().getSessionMap();
+//		context.getExternalContext().getSessionMap();
 		
-		return "produtoGerenciamento";
+		return "index.xhtml?faces-redirect=true";
 	}
 	public String canc() {
 		return "index.xhtml?faces-redirect=true";

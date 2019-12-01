@@ -31,7 +31,7 @@
     </div>
   </nav>
  <br></br><br></br><br></br><br></br><br></br><br></br>
- 	<form>
+ 	<h:form>
 		  <div class="form-group">
 		    <label for="exampleFormControlInput1">Nome do Produto:</label>
 		    <h:inputText type="email" class="form-control" id="exampleFormControlInput1" value="#{produtoControlador.produto.nome}"/>
@@ -44,16 +44,16 @@
 	  	 
 	  	 <div class="form-group">
 		    <label for="exampleFormControlInput1">Quantidade do Produto:</label>
-		    <h:inputText type="email" class="form-control" id="exampleFormControlInput1" value="#{produtoControlador.produto.quantidade}" />
+		    <h:inputText type="email" class="form-control" id="exampleFormControlInput2" value="#{produtoControlador.produto.quantidade}" />
 		 </div>
 		 	<h:form>
 		 		<h:commandButton type="button" class="btn btn-outline-success" action="#{produtoControlador.adicionar}" value="Confirmar" onclick = "alert('Produto salvo com sucesso!');">
 		 	
-				 </h:commandButton>
-			</h:form>
-		 <h:commandButton type="button" class="btn btn-outline-danger" value="Cancelar" action="#{produtoControlador.canc}"></h:commandButton>
+				</h:commandButton>
+		 		<h:commandButton type="button" class="btn btn-outline-danger" value="Cancelar" action="#{produtoControlador.canc}"></h:commandButton>
+			</h:form>		
 		 <br></br><br></br>
-    </form>
+    </h:form>
  
  
  

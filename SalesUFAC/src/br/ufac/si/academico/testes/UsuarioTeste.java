@@ -2,7 +2,9 @@ package br.ufac.si.academico.testes;
 
 import java.security.NoSuchAlgorithmException;
 
+import br.ufac.si.academico.entidades.Cliente;
 import br.ufac.si.academico.entidades.Usuario;
+import br.ufac.si.academico.entidades.Vendedor;
 import br.ufac.si.academico.gerentes.UsuarioGerente;
 
 public class UsuarioTeste {
@@ -15,22 +17,22 @@ public class UsuarioTeste {
 		System.out.println(a);
 		System.out.println(a.getFuncao());
 		
-		/*Usuario us1 = new Usuario("Mickael", "01642319279", "28/08/1999", "123456");
-		Usuario us2 = new Usuario("Savyo S", "12345678900", "00/00/1999", "42357");
-		Usuario us3 = new Usuario("Andrielle Lima", "12345455900", "00/00/1999", "654321");
-		Usuario us4 = new Usuario("Andrielfef", "ef345455900", "00/00/1999", "654321");
+		Vendedor v1 = new Vendedor("Mickael", "01642319279","mickaellabres@gmail.com", "28/08/1999", "123456");
+		Vendedor v2 = new Vendedor("Savyo", "05623559679","savyo@gmail.com", "40/58/8999", "128456");
+		Cliente c1 = new Cliente("Andrielle Lima", "12345455900","andrielle@gmail.com", "00/00/1999", "654321");
+		Cliente c2 = new Cliente("Hulk", "12345678900","verdao@gmail.com", "50/05/1999", "654321");
 
 		
-		ug.adicionar(us1);
-		ug.adicionar(us2);
-		ug.adicionar(us3);
+		ug.adicionar(v1);
+		ug.adicionar(v2);
+		ug.adicionar(c1);
 		
-		us2.setDataNascimento("55/55/1655");
-		ug.atualizar(us2);
+		v1.setDataNascimento("55/55/1655");
+		ug.atualizar(v1);
 		
-		ug.remover(us4);
+		ug.remover(c2);
 
-		ug.recuperar(us1.getId());*/
+		ug.recuperar(c1.getId());
 		
 		ug.encerrar();
 

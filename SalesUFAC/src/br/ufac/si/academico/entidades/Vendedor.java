@@ -21,7 +21,7 @@ public class Vendedor extends Usuario {
 	public Vendedor() {}
 
 	public Vendedor(String nome, String cpf, String email, String dataNascimento, String senha) throws NoSuchAlgorithmException {
-		super(nome, cpf,email, dataNascimento, senha, "Vendedor");
+		super(nome, cpf, email, dataNascimento, senha, "Vendedor");
 	}
 	private double Avaliacao;
 	private int quantaval; //quantas avalições ja teve
@@ -39,6 +39,15 @@ public class Vendedor extends Usuario {
 		Avaliacao = avaliacao;
 		setQuantaval(getQuantaval()+1);
 	}
+
+	
+	@Override
+	public String toString() {
+		return "Vendedor [Avaliacao=" + Avaliacao + ", quantaval=" + quantaval + ", getId()=" + getId() + ", getNome()="
+				+ getNome() + ", getCpf()=" + getCpf() + ", getDataNascimento()=" + getDataNascimento()
+				+ ", getSenha()=" + getSenha() + ", getEmail()=" + getEmail() + ", getFuncao()=" + getFuncao() + "]";
+	}
+	
 	
 	
 }

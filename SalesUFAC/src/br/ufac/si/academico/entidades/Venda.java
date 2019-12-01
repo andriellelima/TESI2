@@ -18,9 +18,10 @@ public class Venda {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO) // gerador de ID automatico
 	private long id;
+	
 	@Column(nullable=false, length=10)
 	private String dataVenda;
-	@ManyToOne()
+	@ManyToOne
 	@JoinColumn(name="produto")
 	private Produto produto;
 	@Column(nullable=false)
@@ -28,20 +29,20 @@ public class Venda {
 	@Column(nullable=false)
 	private double valor;
 	//	private int pontosFidelidade;
-	@ManyToOne()
+	@ManyToOne
 	@JoinColumn(name="vendedor")
 	private Vendedor vendedor;
-	@ManyToOne()
+	@ManyToOne
 	@JoinColumn(name="cliente")
 	private Cliente cliente;
 
 	public Venda() {}
 
-	public Venda(long id, String dataVenda, Produto produto, int quantidade, double valor, Vendedor vendedor, Cliente cliente) {
-		this.id = id;
+	public Venda(String dataVenda, Produto produto, int quantidade, Vendedor vendedor, Cliente cliente) {
 		this.dataVenda = dataVenda;
 		this.produto = produto;
 		this.quantidade = quantidade;
+		double valor = produto.getValor()*quantidade;
 		this.valor = valor;
 		//		this.pontosFidelidade = pontosFidelidade;
 		this.vendedor = vendedor;
@@ -97,6 +98,12 @@ public class Venda {
 	}
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
+	}
+
+	@Override
+	public String toString() {
+		return "Venda [id=" + id + ", dataVenda=" + dataVenda + ", produto=" + produto + ", quantidade=" + quantidade
+				+ ", valor=" + valor + ", vendedor=" + vendedor.getNome() + ", cliente=" + cliente.getNome() + "]";
 	}
 
 

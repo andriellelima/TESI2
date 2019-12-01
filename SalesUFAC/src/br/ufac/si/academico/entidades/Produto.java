@@ -25,7 +25,9 @@ public class Produto {
 	private String descricao;
 	@Column(nullable=false)
 	private double avaliacao;
-	@ManyToOne()
+	@Column(nullable=false)
+	private double valor;
+	@ManyToOne
 	@JoinColumn(name="vendedor")
 	private Vendedor vendedor;
 	private int quantaval; //quantas avalições ja teve
@@ -33,10 +35,11 @@ public class Produto {
 	
 	public Produto() {}
 	
-	public Produto(long quantidade, String nome, String descricao, Vendedor vendedor) {
+	public Produto(long quantidade, String nome, String descricao, double valor , Vendedor vendedor) {
 		this.quantidade = quantidade;
 		this.nome = nome;
 		this.descricao = descricao;
+		this.valor = valor;
 //		this.avaliacao = avaliacao;
 		this.vendedor = vendedor;
 	}
@@ -85,6 +88,21 @@ public class Produto {
 	}
 	public void setVendedor(Vendedor vendedor) {
 		this.vendedor = vendedor;
+	}
+
+	public double getValor() {
+		return valor;
+	}
+
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+		
+	@Override
+	public String toString() {
+		return "Produto [Id=" + this.Id + ", quantidade=" + this.quantidade + ", nome=" + this.nome + ", descricao=" + this.descricao
+				+ ", avaliacao=" + this.avaliacao + ", valor=" + this.valor + ", vendedor=" + this.vendedor + ", quantaval="
+				+ this.quantaval + "]";
 	}
 	
 	
